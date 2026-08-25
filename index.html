@@ -527,52 +527,6 @@ h1 {
 .empty p { margin: 4px 0; }
 .empty-sub { font-size: 13px; color: var(--text-faint); }
 
-.tangle-table-wrap {
-  overflow-x: auto;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-}
-.tangle-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: "Plex Mono", monospace;
-  font-size: 13px;
-  white-space: nowrap;
-}
-.tangle-table th, .tangle-table td {
-  padding: 10px 14px;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-}
-.tangle-table th {
-  color: var(--text-faint);
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-.tangle-table tr:last-child td { border-bottom: none; }
-.tangle-table td.num, .tangle-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
-.tangle-table .code { color: var(--accent); font-weight: 600; margin-right: 6px; }
-.tangle-resolved {
-  margin-top: 16px;
-  font-size: 12.5px;
-  color: var(--text-muted);
-}
-.tangle-resolved-label {
-  font-family: "Plex Mono", monospace;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-faint);
-  margin-bottom: 6px;
-}
-.tangle-resolved ul { margin: 0; padding-left: 18px; }
-.tangle-resolved li { margin-bottom: 4px; }
-.tangle-resolved .code { color: var(--accent); font-weight: 600; font-family: "Plex Mono", monospace; }
-
 .footnote {
   margin-top: 36px;
   padding-top: 18px;
@@ -602,7 +556,7 @@ h1 {
       </button>
       <div class="masthead-date">
         2026-08-25（週二）
-        <span class="updated">更新於 2026-08-25 04:15</span>
+        <span class="updated">更新於 2026-08-25 11:14</span>
       </div>
     </div>
   </header>
@@ -614,20 +568,20 @@ h1 {
 
   <div class="stats">
     <div class="stat">
-      <div class="stat-label">掃描檔數（上市 1085 / 上櫃 886）</div>
-      <div class="stat-value mono">1969</div>
+      <div class="stat-label">掃描檔數（上市 1086 / 上櫃 886）</div>
+      <div class="stat-value mono">1970</div>
     </div>
     <div class="stat">
-      <div class="stat-label">符合條件（底背離0／超賣1／支撐1／MACD交叉0／收腳0／MACD背離0／週線背離1）</div>
-      <div class="stat-value mono accent">3</div>
+      <div class="stat-label">符合條件（底背離0／超賣0／支撐1／MACD交叉0／收腳0／MACD背離0／週線背離1）</div>
+      <div class="stat-value mono accent">2</div>
     </div>
     <div class="stat">
       <div class="stat-label">平均歷史命中率</div>
-      <div class="stat-value mono">66%</div>
+      <div class="stat-value mono">67%</div>
     </div>
     <div class="stat">
       <div class="stat-label">因空頭趨勢排除數</div>
-      <div class="stat-value mono warning">13</div>
+      <div class="stat-value mono warning">16</div>
     </div>
   </div>
 
@@ -653,47 +607,11 @@ h1 {
     <section class="tier-section">
       <div class="section-label">短期（≤8 個交易日內跌入超賣）<span class="section-hint">越新代表越接近底部，風險也最高</span></div>
       
-        <ul class="list">
-          
-    <li class="row">
-      <div class="row-head">
-        <span class="rank">01</span>
-        <span class="market-tag">上市</span>
-        <span class="code">2923</span>
-        <span class="name">鼎固-KY</span>
-      </div>
-      <div class="row-tags">
-        <span class="industry-tag fresh-tag">距今3個交易日</span>
-        <span class="industry-tag">建材營造</span>
-        <span class="industry-tag verdict-bear">空方共振</span>
-        
-      </div>
-      <div class="row-mid">
-        <div class="winrate">
-          <div class="winrate-track"><div class="winrate-fill" style="width:70%"></div></div>
-          <span class="winrate-label">70%<small>／10次</small></span>
+        <div class="empty">
+          <div class="empty-mark">—</div>
+          <p>這個區間今天掛零。</p>
+          <p class="empty-sub">訊號本身很稀有且門檻嚴格，掛零是正常結果，不代表程式沒跑。</p>
         </div>
-        <div class="latest">
-          <span class="latest-price">25.25</span>
-          <span class="latest-rsi">RSI 26</span>
-        </div>
-      </div>
-      <div class="row-bottom">
-        <div class="lows">
-        <div class="low-pair">
-          <span class="low-date">08-18</span>
-          <span class="low-price down">23.90</span>
-          <span class="delta-tag price-down">跌破超賣 RSI 9</span>
-        </div></div>
-        <span class="revenue">月營收 639萬<small>（民國115年07月）</small> 年增 <span class="rev-up">+75.3%</span></span>
-      </div>
-      
-      <div class="row-insti">
-        <span class="insti-label">法人2026-08-24</span>
-        <span class="insti-item">外資 <span class="rev-down">-22張</span></span><span class="insti-item">投信 <span class="rev-up">+0張</span></span><span class="insti-item">自營商 <span class="rev-up">+4張</span></span>
-      </div>
-    </li>
-        </ul>
     </section>
     <section class="tier-section">
       <div class="section-label">長期（9–14 個交易日）<span class="section-hint">已經蹲了一段時間仍未反彈</span></div>
@@ -707,58 +625,58 @@ h1 {
     <section class="tier-section">
       <div class="section-label">短期（≤8 個交易日內測試支撐）<span class="section-hint">剛回測到支撐線</span></div>
       
-        <div class="empty">
-          <div class="empty-mark">—</div>
-          <p>這個區間今天掛零。</p>
-          <p class="empty-sub">訊號本身很稀有且門檻嚴格，掛零是正常結果，不代表程式沒跑。</p>
-        </div>
-    </section>
-    <section class="tier-section">
-      <div class="section-label">長期（9–14 個交易日）<span class="section-hint">貼線已經一段時間</span></div>
-      
         <ul class="list">
           
     <li class="row">
       <div class="row-head">
         <span class="rank">01</span>
-        <span class="market-tag">上市</span>
-        <span class="code">4976</span>
-        <span class="name">佳凌</span>
+        <span class="market-tag">上櫃</span>
+        <span class="code">3631</span>
+        <span class="name">晟楠</span>
       </div>
       <div class="row-tags">
-        <span class="industry-tag fresh-tag">距今10個交易日</span>
-        <span class="industry-tag">光電業</span>
-        <span class="industry-tag verdict-bull">多方共振</span>
+        <span class="industry-tag fresh-tag">距今8個交易日</span>
+        <span class="industry-tag">電子零組件業</span>
         
+        <span class="industry-tag warning-tag">日線警示 MACD多頭收腳(2026-08-24)</span>
       </div>
       <div class="row-mid">
         <div class="winrate">
-          <div class="winrate-track"><div class="winrate-fill" style="width:60%"></div></div>
-          <span class="winrate-label">60%<small>／5次</small></span>
+          <div class="winrate-track"><div class="winrate-fill" style="width:67%"></div></div>
+          <span class="winrate-label">67%<small>／3次</small></span>
         </div>
         <div class="latest">
-          <span class="latest-price">38.00</span>
-          <span class="latest-rsi">RSI 50</span>
+          <span class="latest-price">37.75</span>
+          <span class="latest-rsi">RSI 72</span>
         </div>
       </div>
       <div class="row-bottom">
         <div class="lows">
         <div class="low-pair">
-          <span class="low-date">08-07</span>
+          <span class="low-date">08-13</span>
           <span class="low-price">36.25</span>
           <span class="arrow">支撐位</span>
-          <span class="low-price down">35.03</span>
-          <span class="delta-tag rsi-up">高出支撐 3.5%</span>
+          <span class="low-price down">36.04</span>
+          <span class="delta-tag rsi-up">高出支撐 0.6%</span>
         </div></div>
-        <span class="revenue">月營收 97萬<small>（民國115年07月）</small> 年增 <span class="rev-up">+9.5%</span></span>
+        <span class="revenue">月營收 7萬<small>（民國115年07月）</small> 年增 <span class="rev-up">+181.8%</span></span>
       </div>
       
       <div class="row-insti">
         <span class="insti-label">法人2026-08-24</span>
-        <span class="insti-item">外資 <span class="rev-down">-544張</span></span><span class="insti-item">投信 <span class="rev-up">+0張</span></span><span class="insti-item">自營商 <span class="rev-up">+0張</span></span>
+        <span class="insti-item">投信 <span class="rev-up">+0張</span></span><span class="insti-item">自營商 <span class="rev-up">+0張</span></span>
       </div>
     </li>
         </ul>
+    </section>
+    <section class="tier-section">
+      <div class="section-label">長期（9–14 個交易日）<span class="section-hint">貼線已經一段時間</span></div>
+      
+        <div class="empty">
+          <div class="empty-mark">—</div>
+          <p>這個區間今天掛零。</p>
+          <p class="empty-sub">訊號本身很稀有且門檻嚴格，掛零是正常結果，不代表程式沒跑。</p>
+        </div>
     </section></div><div class="strategy-label">策略四・MACD+RSI雙黃金交叉<span class="strategy-hint">MACD黃金交叉跟RSI黃金交叉(RSI穿越自己的均線)要在3個交易日內都發生，兩個指標互相驗證</span></div><div class="tier-pair">
     <section class="tier-section">
       <div class="section-label">短期（≤8 個交易日）<span class="section-hint">雙交叉剛確認</span></div>
@@ -827,9 +745,9 @@ h1 {
         <span class="name">佳大</span>
       </div>
       <div class="row-tags">
-        <span class="industry-tag fresh-tag">距今0週</span>
+        <span class="industry-tag fresh-tag">距今1週</span>
         <span class="industry-tag">鋼鐵工業</span>
-        <span class="industry-tag verdict-bull">多方共振</span>
+        <span class="industry-tag verdict-mixed">指標打架(觀望)</span>
         
       </div>
       <div class="row-mid">
@@ -838,7 +756,7 @@ h1 {
           <span class="winrate-label">67%<small>／3次</small></span>
         </div>
         <div class="latest">
-          <span class="latest-price">22.00</span>
+          <span class="latest-price">22.85</span>
           <span class="latest-rsi">RSI 79</span>
         </div>
       </div>
@@ -863,13 +781,6 @@ h1 {
       </div>
     </li>
         </ul>
-    </section>
-
-  
-    <section class="tier-section" style="margin-top:48px;">
-      <div class="strategy-label">均線糾結觀察<span class="strategy-hint">MA5/MA10/MA20收斂到0.8%以內、且量比≥1.5倍，代表股價盤整到末端、量能開始注意——雙向訊號不代表多空，不進回測統計，純觀察名單。掃的是觀察清單(0檔符合)，跟上面全市場的六套策略是不同範圍的資料，依成交額排序</span></div>
-      <div class="empty"><div class="empty-mark">—</div><p>目前沒有均線糾結的股票。</p></div>
-      
     </section>
 
   <div class="footnote">
