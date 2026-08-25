@@ -554,7 +554,7 @@ h1 {
   letter-spacing: 0.05em;
 }
 .tangle-table tr:last-child td { border-bottom: none; }
-.tangle-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tangle-table td.num, .tangle-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .tangle-table .code { color: var(--accent); font-weight: 600; margin-right: 6px; }
 .tangle-resolved {
   margin-top: 16px;
@@ -871,7 +871,7 @@ h1 {
       
         <div class="tangle-table-wrap">
         <table class="tangle-table">
-          <thead><tr><th>股票</th><th>市場</th><th>收盤</th><th>糾結%</th><th>乖離%</th><th>量比</th><th>振幅%</th><th>成交額</th><th>連續天數</th></tr></thead>
+          <thead><tr><th>股票</th><th>市場</th><th class="num">收盤</th><th class="num">糾結%</th><th class="num">乖離%</th><th class="num">量比</th><th class="num">振幅%</th><th class="num">成交額</th><th class="num">連續天數</th></tr></thead>
           <tbody>
             <tr>
               <td><span class="code">1712</span> 興農</td>
@@ -882,7 +882,7 @@ h1 {
               <td class="num">1.70x</td>
               <td class="num">0.88%</td>
               <td class="num">5,961.0萬</td>
-              <td class="num">2天</td>
+              <td class="num">3天</td>
             </tr>
             <tr>
               <td><span class="code">1737</span> 臺鹽</td>
@@ -893,7 +893,7 @@ h1 {
               <td class="num">3.15x</td>
               <td class="num">1.85%</td>
               <td class="num">2,444.4萬</td>
-              <td class="num">4天</td>
+              <td class="num">5天</td>
             </tr>
             <tr>
               <td><span class="code">3056</span> 富華新</td>
@@ -904,7 +904,7 @@ h1 {
               <td class="num">2.31x</td>
               <td class="num">1.74%</td>
               <td class="num">2,329.9萬</td>
-              <td class="num">4天</td>
+              <td class="num">5天</td>
             </tr>
             <tr>
               <td><span class="code">1447</span> 力鵬</td>
@@ -915,7 +915,7 @@ h1 {
               <td class="num">1.58x</td>
               <td class="num">5.85%</td>
               <td class="num">1,441.9萬</td>
-              <td class="num">2天</td>
+              <td class="num">3天</td>
             </tr>
             <tr>
               <td><span class="code">2013</span> 中鋼構</td>
@@ -926,7 +926,7 @@ h1 {
               <td class="num">1.85x</td>
               <td class="num">0.84%</td>
               <td class="num">474.4萬</td>
-              <td class="num">2天</td>
+              <td class="num">3天</td>
             </tr>
             <tr>
               <td><span class="code">4706</span> 大恭</td>
@@ -937,7 +937,7 @@ h1 {
               <td class="num">15.16x</td>
               <td class="num">4.41%</td>
               <td class="num">329.8萬</td>
-              <td class="num">4天</td>
+              <td class="num">5天</td>
             </tr>
             <tr>
               <td><span class="code">3666</span> 光耀</td>
@@ -948,7 +948,7 @@ h1 {
               <td class="num">1.51x</td>
               <td class="num">0.99%</td>
               <td class="num">83.0萬</td>
-              <td class="num">2天</td>
+              <td class="num">3天</td>
             </tr></tbody>
         </table>
         </div>
