@@ -536,6 +536,83 @@ h1 {
   line-height: 1.7;
 }
 
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0 24px;
+  border-bottom: 1px solid var(--border);
+}
+.tab-btn {
+  font-family: "Plex Mono", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 18px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+.industry-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+}
+.industry-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.industry-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+.industry-badge {
+  font-family: "Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--rise-soft);
+  color: var(--rise);
+}
+.industry-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+.industry-members {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+.industry-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 13px;
+}
+.industry-member:last-child { border-bottom: none; }
+.industry-member-name { color: var(--text); }
+.industry-member-stats { color: var(--rise); font-size: 12px; white-space: nowrap; }
+
 @media (max-width: 480px) {
   .row-mid { flex-direction: column; align-items: flex-start; gap: 6px; }
   .latest { flex-direction: row; align-items: baseline; gap: 8px; }
@@ -556,7 +633,7 @@ h1 {
       </button>
       <div class="masthead-date">
         2026-08-26（週三）
-        <span class="updated">更新於 2026-08-26 14:15</span>
+        <span class="updated">更新於 2026-08-26 14:52</span>
       </div>
     </div>
   </header>
@@ -566,6 +643,12 @@ h1 {
     <span class="market-banner-text">週RSI頂背離(2026-08-07) —— 大盤本身也在轉弱，個股訊號要打折看</span>
   </div>
 
+  <div class="tabs">
+    <button class="tab-btn active" id="tabBtnStrategy" type="button">買進候選策略</button>
+    <button class="tab-btn" id="tabBtnIndustry" type="button">產業熱度觀察</button>
+  </div>
+
+  <div id="tabStrategy" class="tab-panel">
   <div class="stats">
     <div class="stat">
       <div class="stat-label">掃描檔數（上市 1086 / 上櫃 887）</div>
@@ -1388,6 +1471,22 @@ h1 {
           <p class="empty-sub">訊號本身很稀有且門檻嚴格，掛零是正常結果，不代表程式沒跑。</p>
         </div>
     </section></div>
+  </div>
+
+  <div id="tabIndustry" class="tab-panel" style="display:none">
+  
+    <section class="tier-section">
+      <div class="empty">
+        <div class="empty-mark">—</div>
+        <p>今天沒有產業達到發動門檻。</p>
+        <p class="empty-sub">簡化版用官方~25~30組大分類，門檻也偏嚴，掛零是常見結果。</p>
+      </div>
+    </section>
+  <div class="footnote">
+    產業熱度觀察是簡化版：產業分類用TWSE月營收公開資料的~25~30組官方大分類，不是精細題材/供應鏈分類；資料是每日盤後收盤統計，不是盤中即時。
+    發動門檻（個股當日漲幅≥3%、量比≥1.5倍20日均量、族群至少2檔且廣度≥25%）為初版參考門檻，未經本系統回測校準。
+  </div>
+  </div>
 
   <div class="footnote">
     資料源：Yahoo Finance 日線收盤/成交量，法人買賣超來自 TWSE/TPEx 公開資料，回測與訊號偵測邏輯見專案 <span class="mono">divergence.py</span>。
@@ -1401,4 +1500,13 @@ document.getElementById("themeToggle").addEventListener("click", function() {
   document.documentElement.dataset.theme = next;
   localStorage.setItem("theme", next);
 });
+
+function switchTab(name) {
+  document.getElementById("tabStrategy").style.display = name === "strategy" ? "" : "none";
+  document.getElementById("tabIndustry").style.display = name === "industry" ? "" : "none";
+  document.getElementById("tabBtnStrategy").classList.toggle("active", name === "strategy");
+  document.getElementById("tabBtnIndustry").classList.toggle("active", name === "industry");
+}
+document.getElementById("tabBtnStrategy").addEventListener("click", function() { switchTab("strategy"); });
+document.getElementById("tabBtnIndustry").addEventListener("click", function() { switchTab("industry"); });
 </script>
