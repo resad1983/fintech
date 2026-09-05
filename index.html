@@ -281,6 +281,14 @@ h1 {
   align-items: start;
 }
 .tier-section { margin-bottom: 32px; min-width: 0; }
+.top-picks-section {
+  padding: 20px;
+  border: 2px solid var(--accent);
+  border-radius: 14px;
+  background: var(--accent-soft);
+}
+.top-picks-section .section-label { color: var(--accent); font-weight: 700; }
+.top-picks-section .list { background: transparent; }
 .section-label {
   font-family: "Plex Mono", monospace;
   font-size: 12px;
@@ -434,6 +442,11 @@ h1 {
   background: var(--surface-raised);
   color: var(--text-muted);
   border: 1px solid var(--border);
+}
+.industry-tag.strategy-tag {
+  background: var(--accent);
+  color: var(--surface);
+  font-weight: 700;
 }
 
 .winrate { display: flex; flex-direction: column; gap: 6px; }
@@ -643,8 +656,8 @@ h1 {
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
       </button>
       <div class="masthead-date">
-        2026-09-05（週六）
-        <span class="updated">更新於 2026-09-05 04:16</span>
+        2026-09-06（週日）
+        <span class="updated">更新於 2026-09-06 00:11</span>
       </div>
     </div>
   </header>
@@ -660,6 +673,137 @@ h1 {
   </div>
 
   <div id="tabStrategy" class="tab-panel">
+  
+    <section class="tier-section top-picks-section">
+      <div class="section-label">今日買進<span class="section-hint">依樣本數+個股歷史勝率排序</span></div>
+      <ul class="list">
+        
+    <li class="row">
+      <div class="row-head">
+        <span class="rank">01</span>
+        <span class="market-tag">上市</span>
+        <span class="code">7610</span>
+        <span class="name">聯友金屬-創</span>
+      </div>
+      <div class="row-tags">
+        <span class="industry-tag fresh-tag">距今0個交易日</span>
+        <span class="industry-tag strategy-tag">柱狀體翻紅</span>
+        <span class="industry-tag">綠能環保</span>
+        
+        
+        
+      </div>
+      <div class="row-mid">
+        <div class="winrate">
+          <div class="winrate-track"><div class="winrate-fill" style="width:57%"></div></div>
+          <span class="winrate-label">57%<small>／28次</small></span>
+        </div>
+        <div class="latest">
+          <span class="latest-price">1820.00</span>
+          <span class="latest-rsi">RSI 49</span>
+        </div>
+      </div>
+      <div class="row-bottom">
+        <div class="lows">
+        <div class="low-pair">
+          <span class="low-date">翻紅確認 09-04</span>
+          <span class="low-price down">1820.00</span>
+          <span class="delta-tag rsi-up">柱狀體 12.805</span>
+          <span class="delta-tag price-down">MA20 1692.00</span>
+        </div></div>
+        <span class="revenue">月營收 971萬<small>（民國115年07月）</small> 年增 <span class="rev-up">+722.0%</span></span>
+      </div>
+      
+      <div class="row-insti">
+        <span class="insti-label">法人2026-09-04</span>
+        <span class="insti-item">外資 <span class="rev-down">-4張</span></span><span class="insti-item">投信 <span class="rev-up">+0張</span></span><span class="insti-item">自營商 <span class="rev-up">+33張</span></span>
+      </div>
+    </li>
+
+    <li class="row">
+      <div class="row-head">
+        <span class="rank">02</span>
+        <span class="market-tag">上櫃</span>
+        <span class="code">4127</span>
+        <span class="name">天良</span>
+      </div>
+      <div class="row-tags">
+        <span class="industry-tag fresh-tag">距今0個交易日</span>
+        <span class="industry-tag strategy-tag">超賣觀察</span>
+        <span class="industry-tag">生技醫療業</span>
+        <span class="industry-tag verdict-bear">空方共振</span>
+        <span class="industry-tag verdict-bear">KD低檔鈍化</span>
+        <span class="industry-tag warning-tag">日線警示 MACD頂背離(2026-08-25)、MACD多頭收腳(2026-08-21)</span><span class="industry-tag warning-tag-weekly">週線警示 週MACD多頭收腳(2026-08-28)</span>
+      </div>
+      <div class="row-mid">
+        <div class="winrate">
+          <div class="winrate-track"><div class="winrate-fill" style="width:55%"></div></div>
+          <span class="winrate-label">55%<small>／11次</small></span>
+        </div>
+        <div class="latest">
+          <span class="latest-price">61.30</span>
+          <span class="latest-rsi">RSI 13</span>
+        </div>
+      </div>
+      <div class="row-bottom">
+        <div class="lows">
+        <div class="low-pair">
+          <span class="low-date">09-04</span>
+          <span class="low-price down">61.30</span>
+          <span class="delta-tag price-down">跌破超賣 RSI 13</span>
+        </div></div>
+        <span class="revenue">月營收 59萬<small>（民國115年07月）</small> 年增 <span class="rev-up">+25.2%</span></span>
+      </div>
+      
+      <div class="row-insti">
+        <span class="insti-label">法人2026-09-04</span>
+        <span class="insti-item">投信 <span class="rev-up">+0張</span></span><span class="insti-item">自營商 <span class="rev-up">+1張</span></span>
+      </div>
+    </li>
+
+    <li class="row">
+      <div class="row-head">
+        <span class="rank">03</span>
+        <span class="market-tag">上櫃</span>
+        <span class="code">4979</span>
+        <span class="name">華星光</span>
+      </div>
+      <div class="row-tags">
+        <span class="industry-tag fresh-tag">距今0個交易日</span>
+        <span class="industry-tag strategy-tag">MACD+RSI雙金叉</span>
+        <span class="industry-tag">通信網路業</span>
+        <span class="industry-tag verdict-mixed">指標打架(觀望)</span>
+        
+        
+      </div>
+      <div class="row-mid">
+        <div class="winrate">
+          <div class="winrate-track"><div class="winrate-fill" style="width:52%"></div></div>
+          <span class="winrate-label">52%<small>／42次</small></span>
+        </div>
+        <div class="latest">
+          <span class="latest-price">629.00</span>
+          <span class="latest-rsi">RSI 63</span>
+        </div>
+      </div>
+      <div class="row-bottom">
+        <div class="lows">
+        <div class="low-pair">
+          <span class="low-date">MACD交叉 09-04</span>
+          <span class="arrow">+</span>
+          <span class="low-date">RSI交叉 09-04</span>
+          <span class="delta-tag rsi-up">收盤 629.00</span>
+        </div></div>
+        <span class="revenue">月營收 509萬<small>（民國115年07月）</small> 年增 <span class="rev-up">+31.0%</span></span>
+      </div>
+      
+      <div class="row-insti">
+        <span class="insti-label">法人2026-09-04</span>
+        <span class="insti-item">投信 <span class="rev-up">+671張</span></span><span class="insti-item">自營商 <span class="rev-down">-208張</span></span>
+      </div>
+    </li>
+      </ul>
+    </section>
   <div class="stats">
     <div class="stat">
       <div class="stat-label">掃描檔數（上市 1085 / 上櫃 887）</div>
@@ -712,6 +856,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今2個交易日</span>
+        
         <span class="industry-tag">通信網路業</span>
         <span class="industry-tag verdict-bear">空方共振</span>
         
@@ -752,6 +897,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今0個交易日</span>
+        
         <span class="industry-tag">生技醫療業</span>
         <span class="industry-tag verdict-bear">空方共振</span>
         <span class="industry-tag verdict-bear">KD低檔鈍化</span>
@@ -792,6 +938,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今1個交易日</span>
+        
         <span class="industry-tag">半導體業</span>
         <span class="industry-tag verdict-mixed">指標打架(觀望)</span>
         <span class="industry-tag verdict-bear">KD低檔鈍化</span>
@@ -865,6 +1012,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今3個交易日</span>
+        
         <span class="industry-tag">電機機械</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         
@@ -906,6 +1054,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今2個交易日</span>
+        
         <span class="industry-tag">航運業</span>
         <span class="industry-tag verdict-mixed">指標打架(觀望)</span>
         
@@ -947,6 +1096,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今0個交易日</span>
+        
         <span class="industry-tag">通信網路業</span>
         <span class="industry-tag verdict-mixed">指標打架(觀望)</span>
         
@@ -988,6 +1138,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今0個交易日</span>
+        
         <span class="industry-tag">電腦及週邊設備業</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         
@@ -1029,6 +1180,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今3個交易日</span>
+        
         <span class="industry-tag">數位雲端</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         
@@ -1070,6 +1222,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今0個交易日</span>
+        
         <span class="industry-tag">綠能環保</span>
         
         
@@ -1126,6 +1279,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今3個交易日</span>
+        
         <span class="industry-tag">半導體業</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         
@@ -1208,6 +1362,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今0個交易日</span>
+        
         <span class="industry-tag">綠能環保</span>
         
         
@@ -1249,6 +1404,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今2個交易日</span>
+        
         <span class="industry-tag">航運業</span>
         <span class="industry-tag verdict-mixed">指標打架(觀望)</span>
         
@@ -1290,6 +1446,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今8個交易日</span>
+        
         <span class="industry-tag">電子零組件業</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         
@@ -1331,6 +1488,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今0個交易日</span>
+        
         <span class="industry-tag">通信網路業</span>
         <span class="industry-tag verdict-mixed">指標打架(觀望)</span>
         
@@ -1372,6 +1530,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今0個交易日</span>
+        
         <span class="industry-tag">電腦及週邊設備業</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         
@@ -1428,6 +1587,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今1個交易日</span>
+        
         <span class="industry-tag">半導體業</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         
@@ -1469,6 +1629,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今1個交易日</span>
+        
         <span class="industry-tag">電腦及週邊設備業</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         <span class="industry-tag verdict-bull">KD高檔鈍化</span>
@@ -1510,6 +1671,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今2個交易日</span>
+        
         <span class="industry-tag">半導體業</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         
@@ -1551,6 +1713,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今6個交易日</span>
+        
         <span class="industry-tag">數位雲端</span>
         <span class="industry-tag verdict-bull">多方共振</span>
         
@@ -1598,6 +1761,7 @@ h1 {
       </div>
       <div class="row-tags">
         <span class="industry-tag fresh-tag">距今10個交易日</span>
+        
         <span class="industry-tag">電子零組件業</span>
         <span class="industry-tag verdict-mixed">指標打架(觀望)</span>
         
